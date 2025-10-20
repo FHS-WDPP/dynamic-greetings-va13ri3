@@ -1,32 +1,172 @@
         /* General Styles that apply to all */
+        h1 {
+  font-family: 'Arial Black', sans-serif; /* Bold font */
+  color: #3498db; /* Adjust color as needed */
+  text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.4); /* Depth with shadow */
+  margin: 50px; /* Increased margin for separation */
+  letter-spacing: 2px; Slight letter spacing
+  /* position: absolute; */
+  bottom: 0;
+  /* left: 100%; */
+  /* transform: translateY(-100%); */
+  /* text-align: center; */
+  /* width: 100%;  */
+}
 
+.pulsating-text {
+  animation: pulse 2s infinite alternate; Apply the animation
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9); /* Initial size */
+  }
+  50% {
+    transform: scale(1.1); /* Larger size at the peak of the pulse */
+  }
+  100% {
+    transform: scale(0.9); /* Return to initial size */
+  }
+}
 
 
         /* ---------------------------------
            1. Morning Theme (5:00 - 11:59)
            --------------------------------- */
         /* General Morning Styles */
+ 
+     div {
+            background-color: rgb(185, 201, 247);
+         }
+
+
+      .full-screen-container {
+         height: 100vh;
+         width: 100vw;  
+         display: flex;
+         justify-content: flex-end;
+      }
+
+
+        .circle {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(253, 251, 137);
+            border-radius: 50%; */
+           right: 0;  /* Positions the right edge of the circle at the right edge of the container */
+            top: 50%;  /* Aligns the top of the circle to the vertical midpoint */
+            transform: translateY(350%); /* Adjusts the circle up by half its height to truly center it */
+ }  
+
+
+        /* h1 {
+         font-size: 10vw;
+        }
+          */
+
+
+      .bottom-center {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  transform: translateX(100%);
+  text-align: center;
+  width: 100%;
+}
+
 
 
 
         /* Custom Morning Animation: Rises slightly and fades in */
 
 
+        @keyframes fade-rise { */
+  /* Starting state: invisible and lower than final position */
+   from {
+    opacity: 0;
+    transform: translateY(20px); /* "rise" distance */
+  }
+   /*Ending state: fully visible and at final position */
+   to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+
+/* animation */  
+ .fade-rise-animation {
+  animation-name: fade-rise;
+  animation-duration: 1s; /*duration*/
+  animation-fill-mode: forwards; */ /* Keeps the element visible after the animation ends */
+  animation-delay: 0.5s; */ /*delay before the animation starts */
+ }
+
+ 
 
         
         /* ---------------------------------
            2. Afternoon Theme (12:00 - 17:59)
            --------------------------------- */
         /* General Afternoon Styles */
+  div{
+            background-color: rgb(118, 192, 241);
+         }
 
 
+      .full-screen-container {
+         height: 100vh;
+         width: 100vw;  
+         display: flex;
+         justify-content: flex-end;
+      }
+
+
+        .circle {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(255, 237, 154);
+            border-radius: 50%;
+            box-shadow: 0 0 10px 5px rgb(231, 230, 183);
+        }
+
+
+        h1 {
+         font-size: 10vw;
+        }
+         
+
+      .bottom-center {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  transform: translateX(100%);
+  text-align: center;
+  width: 100%;
+  color: #96f3ff;
+  font-size: 3.5em;
+}
 
         /* Custom Afternoon Animation: Bouncy scaling for energy */
+.bouncy {
+  animation: bounceScale 3s ease-in-out infinite; /* Apply the animation */
+}
 
 
-
-
+@keyframes bounceScale {
+  0% {
+    transform: scale(1); /* Starting scale */
+  }
+  50% {
+    transform: scale(1.12); /* Scale up with a bounce */
+  }
+  75% {
+    transform: scale(.97); /* Slightly scale down for a rebound effect */
+  }
+  100% {
+    transform: scale(1); /* Return to original scale */
+  }
+}
 
 
         /* ---------------------------------
@@ -34,11 +174,55 @@
            --------------------------------- */
         /* General Night Styles */
 
+div{
+            background-color: rgb(9, 24, 70);
+         }
 
 
-        /* Custom Night Animation */
+      .full-screen-container {
+         height: 100vh;
+         width: 100vw;  
+         display: flex;
+         justify-content: center;
+      }
+
+
+        .circle {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(230, 225, 207);
+            border-radius: 50%;
+            margin-top: 200px;
+        }
 
 
 
 
- 
+      .bottom-center {
+  position: absolute;
+  bottom: 0;
+  left: 10;
+  transform: translateX(100%);
+  text-align: center;
+  width: 100%;
+  color: #ececec;
+  font-size: 3.5em;
+}
+          
+        /*Custom Night Animation */
+
+   .fade-in-element {
+  opacity: 0; /* Start with the element invisible */
+  animation-name: fadeInOpacity; /* Name of the keyframe animation */
+  animation-duration: 8s; /* Duration of the animation */
+  animation-fill-mode: forwards; /* Keep the final state of the animation */
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0; /* At the start, opacity is 0 */
+  }
+  100% {
+    opacity: 1; /* At the end, opacity is 1 */
+  }
+}
