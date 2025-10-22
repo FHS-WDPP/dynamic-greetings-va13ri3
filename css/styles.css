@@ -4,7 +4,7 @@
   color: #3498db; /* Adjust color as needed */
   text-shadow: 5px 6px 5px rgba(0, 0, 0, 0.4); /* Depth with shadow */
   margin: 50px; /* Increased margin for separation */
-  letter-spacing: 2px; Slight letter spacing
+  letter-spacing: 2px; 
   /* position: absolute; */
   bottom: 0;
   /* left: 100%; */
@@ -14,7 +14,7 @@
 }
 
 .pulsating-text {
-  animation: pulse 2s infinite alternate; Apply the animation
+  animation: pulse 2s infinite alternate; /* Apply the animation */
 }
 
 @keyframes pulse {
@@ -52,8 +52,8 @@
             width: 250px;
             height: 250px;
             background-color: rgb(253, 251, 137);
-            border-radius: 50%; */
-           right: 0;  /* Positions the right edge of the circle at the right edge of the container */
+            border-radius: 50%; 
+            right: 0;  /* Positions the right edge of the circle at the right edge of the container */
             top: 50%;  /* Aligns the top of the circle to the vertical midpoint */
             transform: translateY(350%); /* Adjusts the circle up by half its height to truly center it */
  }  
@@ -80,7 +80,7 @@
         /* Custom Morning Animation: Rises slightly and fades in */
 
 
-        @keyframes fade-rise { */
+        @keyframes fade-rise { 
   /* Starting state: invisible and lower than final position */
    from {
     opacity: 0;
@@ -98,8 +98,8 @@
  .fade-rise-animation {
   animation-name: fade-rise;
   animation-duration: 1s; /*duration*/
-  animation-fill-mode: forwards; */ /* Keeps the element visible after the animation ends */
-  animation-delay: 0.5s; */ /*delay before the animation starts */
+  animation-fill-mode: forwards; /* Keeps the element visible after the animation ends */
+  animation-delay: 0.5s; /*delay before the animation starts */
  }
 
  
@@ -109,7 +109,7 @@
            2. Afternoon Theme (12:00 - 17:59)
            --------------------------------- */
         /* General Afternoon Styles */
-  div{
+  div {
             background-color: rgb(118, 192, 241);
          }
 
