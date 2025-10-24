@@ -29,18 +29,7 @@
   }
 }
 
-
-        /* ---------------------------------
-           1. Morning Theme (5:00 - 11:59)
-           --------------------------------- */
-        /* General Morning Styles */
- 
-     div {
-            background-color: rgb(185, 201, 247);
-         }
-
-
-      .full-screen-container {
+ .full-screen-container {
          height: 100vh;
          width: 100vw;  
          display: flex;
@@ -48,7 +37,17 @@
       }
 
 
-        .circle {
+        /* ---------------------------------
+           1. Morning Theme (5:00 - 11:59)
+           --------------------------------- */
+        /* General Morning Styles */
+
+      .morning {
+          background-color: rgb(185, 201, 247);
+      }
+
+
+        .sun {
             width: 250px;
             height: 250px;
             background-color: rgb(253, 251, 137);
@@ -109,20 +108,13 @@
            2. Afternoon Theme (12:00 - 17:59)
            --------------------------------- */
         /* General Afternoon Styles */
-  div {
-            background-color: rgb(118, 192, 241);
-         }
 
-
-      .full-screen-container {
-         height: 100vh;
-         width: 100vw;  
-         display: flex;
-         justify-content: flex-end;
+      .afternoon {
+        background-color: rgb(118, 192, 241);
       }
 
 
-        .circle {
+        .hot {
             width: 250px;
             height: 250px;
             background-color: rgb(255, 237, 154);
@@ -174,20 +166,12 @@
            --------------------------------- */
         /* General Night Styles */
 
-div{
-            background-color: rgb(9, 24, 70);
-         }
-
-
-      .full-screen-container {
-         height: 100vh;
-         width: 100vw;  
-         display: flex;
-         justify-content: center;
+      .night {
+          background-color: rgb(9, 24, 70);
       }
 
 
-        .circle {
+        .moon {
             width: 250px;
             height: 250px;
             background-color: rgb(230, 225, 207);
